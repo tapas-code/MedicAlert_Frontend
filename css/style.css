@@ -29,11 +29,6 @@
     transition: max-height .8s ease-in-out;
     padding: 0 .5rem;
 }
-.dropdown:hover .dropdown-menu{
-    display:block;
-    max-height: 100%;
-    
-}
 .dropdown>.nav-link::after{
     display: none;
 }
@@ -98,6 +93,21 @@
     background-position: center;
     background-size: cover;
 }
+.med--img{
+    width: 100%;
+    aspect-ratio: 1;
+    background: url("../assets/watch.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Offcanvas Styling  */
+#navbarSupportedContent{
+    max-width: 80vw;
+}
+#medIdOffcanvas{
+    max-width: 70vw;
+}
 
 
 
@@ -117,6 +127,13 @@
         font-size: .9rem;
     }
 
+}
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu{
+        display:block;
+        max-height: 100%;
+        
+    }
 }
 @media (min-width: 1281px){
     .custom--width{
