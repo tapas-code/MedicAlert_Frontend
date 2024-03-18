@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/0a6b78e32b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>MedicAlert</title>
+</head>
+<body>
+    <div class="bg--main rounded-bottom-5">
+        <!-- ----------- NAVBAR  ------------  -->
+        <nav class="navbar navbar-expand-lg p-2" id="myNavbar">
+            <div class="container-fluid">
+                <!-- LOGO  -->
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/Maf-log.png" alt="" width="180px" >
+                </a>
+
+                <!-- TOGGLE BUTTON  -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- COLLAPSING NAVBAR CONTENT  -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- NAVBAR MENU  -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font--small fw-bold d-flex gap-4 " >
+
+                        <!-- HOW IT WORKS  -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How it Work's</a>
+                          </li>
+
+                        <!-- MEDICAL ID'S  -->
+                        <li class="nav-item dropdown" id="MedicalIdDropdown">
+                            <a class="nav-link " href="#" role="button" aria-expanded="false" >
+                            Medical ID's
+                            </a>
+                            <ul class="dropdown-menu border-0 vw-100 position-fixed start-0 rounded-bottom-4 shadow-lg-bottom">
+                                
+                                <div class="container-fluid py-3 mt-3">
+                                    <div class="row">
+
+                                        <!-- COLUMN 1  -->
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                            <div class="d-flex flex-column justify-content-around gap-2">
+                                                <li><a class="dropdown-item" href="#">
+                                                    <div class="card border-0 mb-2 custom--width">
+                                                        <div class="card-body py-1">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h5 class="card-title">Bracelets</h5>
+                                                                <i class="fa-solid fa-shop"></i>
+                                                            </div>
+                                                            <p class="card-text text-wrap">Best-selling classics + modern designs to suit your style.</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                    <div class="card border-0 mb-2 custom--width">
+                                                        <div class="card-body py-1">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h5 class="card-title">Women's</h5>
+                                                                <i class="fa-solid fa-person-breastfeeding"></i>
+                                                            </div>
+                                                            <p class="card-text text-wrap">Lifesaving IDs in all styles: elegant, sporty & more.</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                    <div class="card border-0 mb-2 custom--width">
+                                                        <div class="card-body py-1">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h5 class="card-title">Accessories</h5>
+                                                                <i class="fa-solid fa-snowflake"></i>
+                                                            </div>
+                                                            <p class="card-text text-wrap">Get even more protection with shoe tags, ID cards & more.</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            </div>
+                                        </div>
+
+                                        <!-- COLUMN 2  -->
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                            <div class="d-flex flex-column justify-content-around gap-2" >
+                                                <li><a class="dropdown-item" href="#">
+                                                    <div class="card border-0 mb-2 custom--width">
+                                                        <div class="card-body py-1">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h5 class="card-title">Necklaces</h5>
+                                                                <i class="fa-solid fa-mask-ventilator"></i>
+                                                            </div>
+                                                            <p class="card-text text-wrap">Pendants from dog tags to fine jewelry, casual to classic.</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                    <div class="card border-0 mb-2 custom--width">
+                                                        <div class="card-body py-1">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h5 class="card-title">Men's</h5>
+                                                                <i class="fa-solid fa-mattress-pillow"></i>
+                                                            </div>
+                                                            <p class="card-text text-wrap">Medical IDs for men that range from rugged to refined.</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                    <div class="card border-0 mb-2 custom--width">
+                                                        <div class="card-body py-1">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h5 class="card-title">Push Button</h5>
+                                                                <i class="fa-solid fa-person-military-rifle"></i>
+                                                            </div>
+                                                            <p class="card-text text-wrap">Medical alert systems to summon help when you need it.</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            </div>   
+                                        </div>
+
+                                        <!-- COLUMN 3  -->
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                                            <div class="d-flex flex-column justify-content-around gap-2">
+                                                <li><a class="dropdown-item" href="#">
+                                                    <div class="card border-0 custom--width">
+                                                        <div class="card-body py-1">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h5 class="card-title">Smart ID's</h5>
+                                                                <i class="fa-solid fa-baby"></i>
+                                                            </div>
+                                                            <p class="card-text text-wrap">Upgrade your protection with QR code powered IDs.</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                    <div class="card border-0 mb-2 custom--width">
+                                                        <div class="card-body py-1">
+                                                            <div class="d-flex justify-content-between
+                                                             align-items-center">
+                                                                <h5 class="card-title">Kids</h5>
+                                                                <i class="fa-solid fa-money-bills"></i>
+                                                            </div>
+                                                            <p class="card-text text-wrap">Fun, durable ID options your kid will want to wear.</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                    <div class="card border-0 mb-2 custom--width">
+                                                        <div class="card-body py-1">
+                                                            <div class="d-flex justify-content-between">
+                                                                <h5 class="card-title">All Medical ID's</h5>
+                                                                <i class="fa-solid fa-user-doctor"></i>
+                                                            </div>
+                                                            <p class="card-text text-wrap">See our full collection to find the ID that's right for you.</p>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- COLUMN 4  -->
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 ">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <!-- IMAGE  -->
+                                                <div class="dropdown-item ad--img rounded-5 mb-4">
+                                                    <!-- IMAGE TEXT  -->
+                                                    <div class="w-75 mt-2">
+                                                        <p class="text-wrap pb-0 mb-1 font--small fw-medium" >QR Code Medical ID for Apple Watch</p>
+                                                        <p class="py-0" >⭐⭐⭐⭐⭐</p>
+                                                    </div>
+                                                </div>
+                                                <!-- BUTTON  -->
+                                                <li><a class="dropdown-item" href="#">
+                                                    <button type="button" class="btn btn-outline-dark rounded-5 px-5">Renew Plan</button>
+                                                </a></li>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </ul>
+                        </li>
+
+                        <!-- 24/7 PROTECTION  -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">24/7 Protection</a>
+                        </li>
+                        
+                        <!-- MEMBER STORIES  -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Member Stories</a>
+                        </li>
+                        
+
+                        
+                    </ul>
+                    
+                    <!-- SEARCHBAR 
+                    <div class="btn search--bar me-2 px-4 rounded-5">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <label for="" class="me-5 fw-light">Search</label>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div> -->
+
+                    <i class="fa-regular fa-user me-2"></i>
+
+                    <!-- DONATE BUTTON  -->
+                    <button type="button" class="btn btn-outline-dark rounded-5 px-4 font--small fw-bold">Donate ❤️</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- MAIN  -->
+        <main class="">
+            <div class="container">
+                <div class="row">
+                    <!-- LEFT  -->
+                    <div class="col-12 col-md-12 col-lg-4 order-1 order-lg-1 d-flex flex-column  pt-4">
+                        <p class="h--font fw-medium "><span class="text-danger text-nowrap">Peace of mind</span><br><span class="secondary--color">in every<br> moment.</span> </p>
+                        <p class=" fw-medium lh-sm">24/7 lifesaving protection, <span class="fw-normal fst-italic">right when you need it.</span>
+                            Confidence and safety, <span class="fw-normal fst-italic">always.</span></p>
+                        <button class="min-w-50 align-self-start bg--secondary text-white rounded-5 py-2 px-4 secondary--color font--small">Get Protected ></button>
+                    </div>
+
+                    <!-- IMAGE SECTION  -->
+                    <div class="col-12 col-md-12 col-lg-4 order-3 order-lg-2 pt-2 d-flex justify-content-center">
+                        <div class="img--info d-flex flex-column justify-content-start align-items-center position-relative">
+                            <img class="pt-4 img-fluid" src="./assets/patient.png" alt="Patient">
+                            <div class="info bg-white text-black w-50 position-absolute bottom-0 d-flex flex-column align-items-center pt-2  rounded-top-4">
+                                <h2 class="fs-5 lh-sm mb-0 pt-2">Susan</h2>
+                                <p class="lh-sm font--small">Member since 2010</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT  -->
+                    <div class="col-12 col-md-12 col-lg-4 order-2 order-lg-3 pt-4 d-flex flex-column justify-content-end pb-lg-5">
+                        <svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#e43939" stroke="#e43939"
+                            transform="rotate(0)">
+                            <g>
+                                <path
+                                d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z">
+                                </path>
+                            </g>
+                        </svg>
+                        <p class="pb-lg-4 right--text">
+                            An adrenal crisis is life-
+                            threatening, but hard to
+                            diagnose. I had a crisis at
+                            work, and MedicAlert was
+                            there to tell the EMTs
+                            exactly what I needed. ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- SCRIPT FILE  -->
+    <script>
+        const dropdowns = document.querySelectorAll('.navbar-nav');
+
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('mouseover', () => {
+                document.getElementById('myNavbar').style.backgroundColor = 'white';
+            })
+            dropdown.addEventListener('mouseout', () => {
+                document.getElementById('myNavbar').style.backgroundColor = 'transparent';
+            })
+        });
+    </script>
+</body>
+</html> 

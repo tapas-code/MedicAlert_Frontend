@@ -1,0 +1,130 @@
+:root{
+    --secondary--color: #0a4277;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins"; */
+}
+.bg--main{
+    background: #56b8dd;
+    background: linear-gradient(160deg, rgba(109, 202, 236, 0.829) 0%, rgba(255, 255, 255, 0.801) 75%, rgba(236, 236, 236, 0.815) 100%);
+    min-width: 375px;
+}
+
+
+/* MegaMenu Styling */
+#myNavbar{
+    transition: background-color .2s ease-in-out;
+}
+#myNavbar:not(:hover){
+    transition-delay: 0.8s; 
+}
+.dropdown-menu{
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .8s ease-in-out;
+    padding: 0 .5rem;
+}
+.dropdown:hover .dropdown-menu{
+    display:block;
+    max-height: 100%;
+    
+}
+.dropdown>.nav-link::after{
+    display: none;
+}
+
+
+/* Searchbar Styling  */
+.search--bar{
+    border: 1px solid transparent;
+}
+.search--bar:hover{
+    border: 1px solid rgb(55, 55, 55);
+}
+
+
+/* Custom Styles  */
+.font--small{
+    font-size: .8rem;
+}
+.secondary--color{
+    color: var(--secondary--color);
+}
+.bg--secondary{
+    background-color: var(--secondary--color);
+}
+.h--font{
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+.right--text{
+    width: 60%;
+}
+.custom--width{
+    width: 85%;
+}
+.shadow-lg-bottom{
+    box-shadow: rgba(0, 0, 0, 0.175) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+/* Card Styling  */
+.card{
+    padding: .5rem;
+}
+.dropdown-item:hover .card{
+    background: none;
+}
+.card-title{
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+.card-text{
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+
+/* Img Styling  */
+.ad--img{
+    width: 60%;
+    aspect-ratio: 1;
+    background: url("../assets/watch.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+@media (max-width: 575.98px) {
+    .h--font{
+        font-size: 2rem;
+    }
+    
+}
+@media (max-width: 991px){
+    .custom--flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .right--text{
+        width: 100% !important;
+        font-size: .9rem;
+    }
+
+}
+@media (min-width: 1281px){
+    .custom--width{
+        width: 70%;
+    }
+}
+@media (max-width: 1280px){
+    .ad--img{
+        width: 100%;
+    }
+}
